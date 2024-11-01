@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameena's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-code"></div>
+
+    <section id="profile" class="container-fluid hero-section d-flex flex-column align-items-center justify-content-center">
+        <h1 class="text-dark animated-name">Hi, I'm <span class="highlight">Bi Bi Ameena</span></h1>
+        <div class="profile-picture mb-3">
+            <img src="model-1.jpg" alt="Profile Picture" class="rounded-circle border border-white">
+        </div>
+        <p class="text-muted lead">Aspiring Software Engineer <span style="color: white;">Passionate About Innovation</span></p>
+        <blockquote class="blockquote text-light">
+            <p class="mb-0">"Code, learn, grow."</p>
+        </blockquote>
+
+        <div class="mt-4 button-group">
+            <button class="btn btn-outline-primary mx-2" onclick="scrollToSection('education')">Education <i class="fas fa-graduation-cap"></i></button>
+            <button class="btn btn-outline-secondary mx-2" onclick="scrollToSection('skills')">Skills <i class="fas fa-code"></i></button>
+            <button class="btn btn-outline-info mx-2" onclick="scrollToSection('projects')">Projects <i class="fas fa-project-diagram"></i></button>
+            <button class="btn btn-outline-dark mx-2" onclick="scrollToSection('achievements')">Achievements <i class="fas fa-trophy"></i></button>
+            <button class="btn btn-outline-warning mx-2" onclick="scrollToSection('contact')">Contact <i class="fas fa-envelope"></i></button>
+        </div>
+    </section>
+
+    <section id="education" class="container my-5 py-5">
+        <h3 class="section-heading text-primary">Education</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mb-4 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Bachelor of Engineering in Computer Science</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sri Siddhartha Institute Of Technology</h6>
+                        <p class="card-text">Dec 2020 – Jul 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Pre-University Education</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Sarvodaya Pre-University College</h6>
+                        <p class="card-text">2018 – 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container text-center my-5 py-5 skills-section">
+        <h3 class="section-heading text-primary">Skills</h3>
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="skill-item"><i class="fab fa-html5"></i> HTML, CSS</div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="skill-item"><i class="fab fa-js-square"></i> JavaScript</div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="skill-item"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container text-center my-5 py-5">
+        <h3 class="section-heading text-primary">Projects</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Voice Assistant using OpenAI</h5>
+                        <p class="card-text">An advanced conversational system utilizing AI technology (2023).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Heart Beat Sensor</h5>
+                        <p class="card-text">Real-time health monitoring project using Arduino (2022).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Analysis of Food Additives</h5>
+                        <p class="card-text">Identification of food additives using CNN and OCR (2023-2024).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="container my-5 py-5">
+        <h3 class="section-heading text-primary">Achievements</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <ul class="list-group">
+                    <li class="list-group-item">IBM Skills Build Internship in Web Development</li>
+                    <li class="list-group-item">Web Development Bootcamp by Udemy</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container-fluid text-center py-5 bg-light text-dark">
+        <h3>Contact</h3>
+        <p>
+            <a href="mailto:bibiameena2003@gmail.com" class="text-dark">
+                <i class="fas fa-envelope"></i> bibiameena2003@gmail.com
+            </a>
+        </p>
+        <p>
+            <a href="tel:9353743424" class="text-dark">
+                <i class="fas fa-phone-alt"></i> 93*******4
+            </a>
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/bi-bi-ameena-25918a252" target="_blank" class="text-dark">
+                <i class="fab fa-linkedin"></i> LinkedIn Profile
+            </a>
+        </p>
+        <p>
+            <a href="https://github.com/ameena032" target="_blank" class="text-dark">
+                <i class="fab fa-github"></i> GitHub Profile
+            </a>
+        </p>
+    </section>
+
+    <footer class="text-center text-muted py-3">
+        <p>© 2024 <span style="color: white;">Bi Bi Ameena</span></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
